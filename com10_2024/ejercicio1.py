@@ -1,3 +1,5 @@
+
+
 nombre = input("ingrese el nombre")
 apellido = input("ingrese su apellido")
 dni=input("ingrese su dni sin puntos ni comas")

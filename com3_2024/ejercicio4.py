@@ -13,12 +13,12 @@
 # DNI verificado!. En breve lo contactaremos, en caso contrario, 
 # el texto del mail deberá decir: DNI no verificado!. Reinicie el trámite con una foto de mejor calidad.
 
-# def comunicarResultado(personas) :
-#     for persona in personas :
-#         imagen = dameImagen(persona)
-#         mail = dameMail(persona)
-#         verificado = verificacion(imagen)
-#         texto = "DNI no verificado!. Reinicie el trámite con una foto de mejor calidad."
-#         if verificado :
-#             texto = "DNI verificado!. En breve lo contactaremos"
-#         enviarMail(mail,texto)
+ def comunicarResultado(personas) :
+    for persona in personas :
+         imagen = dameImagen(persona)
+        mail = dameMail(persona)
+         verificado = verificacion(imagen)
+         texto = "DNI no verificado!. Reinicie el trámite con una foto de mejor calidad."
+         if verificado :
+             texto = "DNI verificado!. En breve lo contactaremos"
+         enviarMail(mail,texto)

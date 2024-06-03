@@ -1,3 +1,8 @@
+# Ejercicio 1 (2 puntos)
+# Escribir una función llamada anagrama, que reciba 2 palabras y retorne True si las palabras son anagrama y False si no lo son. Ojo: Si las dos palabras fueran iguales, no son anagrama.
+# Ejemplo de anagramas: peinar y plema cuna y nuca - los y sol
+# Ejemplo de No anagramas: peinar y peinar carne y acres arca y cata
+
 def anagrama(palabra1,palabra2):
     if len(palabra1)!=len(palabra2):  #chequeo que tenga misma cantidad de letras
         return False

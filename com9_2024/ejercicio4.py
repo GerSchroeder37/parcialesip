@@ -14,21 +14,21 @@
 # 3. Realizar un listado con los correos electrónicos de los deudores con deuda superior a 1.000.000$
 # 4. Indicar apellido, deuda y correo electrónico del mayor deudor
 
-# apellidos = apellido_deudores()
-# deudas = deuda_deudores()
-# mails = mail_deudores()
-# mails_mayores_deudores = []
-# mayor_deuda = -1
-# indice_mayor_deudor = -1
-# for i in range(len(apellidos)) :
-#     if se_envio_aviso(mails[i]) == False :
-#         primer_aviso(apellidos[i], deudas[i], mails[i])
-#     else :
-#         if deudas[i] > 500000 :
-#             segundo_aviso(apellidos[i], deudas[i], mails[i])
-#     if deudas[i] > 1000000 :
-#         mails_mayores_deudores.append(mails[i])
-#     if deudas[i] > mayor_deuda :
-#         mayor_deuda = deudas[i]
-#         indice_mayor_deudor = i
-# print("El mayor deudor es",apellidos[indice_mayor_deudor],"la deuda es de",deudas[indice_mayor_deudor],"y su correo es",mails[indice_mayor_deudor])
+ apellidos = apellido_deudores()
+ deudas = deuda_deudores()
+ mails = mail_deudores()
+ mails_mayores_deudores = []
+ mayor_deuda = -1
+ indice_mayor_deudor = -1
+ for i in range(len(apellidos)) :
+     if se_envio_aviso(mails[i]) == False :
+         primer_aviso(apellidos[i], deudas[i], mails[i])
+     else :
+         if deudas[i] > 500000 :
+             segundo_aviso(apellidos[i], deudas[i], mails[i])
+     if deudas[i] > 1000000 :
+         mails_mayores_deudores.append(mails[i])
+     if deudas[i] > mayor_deuda :
+         mayor_deuda = deudas[i]
+         indice_mayor_deudor = i
+ print("El mayor deudor es",apellidos[indice_mayor_deudor],"la deuda es de",deudas[indice_mayor_deudor],"y su correo es",mails[indice_mayor_deudor])
