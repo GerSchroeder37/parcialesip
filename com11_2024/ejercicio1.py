@@ -19,9 +19,11 @@ while serie < n :
     seguir = True
     while seguir:
         numero= random.randint(2,2000)
+        #print("numero",numero)
         if es_par(numero):
             seguir=False
-        fraccion= numero/numero**(numero/2)
-        serie +=fraccion
-        cantidad_terminos += 1
+    fraccion= numero/(numero**(numero/2))
+    serie +=fraccion
+    #print("serie",serie)
+    cantidad_terminos += 1
 print(cantidad_terminos)
